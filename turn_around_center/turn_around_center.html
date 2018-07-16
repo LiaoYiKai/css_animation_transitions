@@ -7,9 +7,108 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+<style>
+  .sun {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 1px #000 solid;
+    position: relative;
+    margin: 100px auto;
+  }
+
+  .sun_center {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffc107;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .earth_style {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    margin-top: -50px;
+    left: 0;
+    margin-left: -50px;
+    animation-name: around;
+    animation-duration: 15s;
+    transform-origin: 250px;
+    transform: rotate(0deg);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .earth {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 1px #000 solid;
+    border-radius: 50%;
+
+  }
+
+  .earth_center {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .moon {
+    position: absolute;
+    background-color: #b4b416;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    margin-left: -10px;
+    border-radius: 50%;
+    animation-name: around;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: 60px;
+    transform: rotate(0deg);
+
+  }
+
+  @keyframes around {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
 
 <body>
-
+  <div class="sun">
+    <div class="sun_center">
+    </div>
+    <div class="earth_style">
+      <div class="earth">
+        <div class="earth_center"></div>
+        <div class="moon"></div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
