@@ -33,14 +33,13 @@
   }
 
   @keyframes sun_style {
-    0% {
+    0%,
+    100% {
       box-shadow: 0 0 0px 0px rgba(255, 235, 59, 1);
     }
-    50% {
+    45%,
+    60% {
       box-shadow: 0 0 4px 4px rgba(255, 235, 59, 1);
-    }
-    80% {
-      box-shadow: 0 0 0px 0px rgba(255, 235, 59, 1);
     }
   }
 
@@ -57,7 +56,7 @@
     animation-name: moon_move;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.03, 1, 0.71, 0.02);
+    /* animation-timing-function: cubic-bezier(0.03, 1, 0.71, 0.02); */
   }
 
   @keyframes moon_move {
@@ -65,10 +64,12 @@
       margin-left: 55px;
       background-color: #82B1FF;
     }
-    15% {
+    45% {
+      margin-left: -48px;
       background-color: #04101C;
     }
     65% {
+      margin-left: -48px;
       background-color: #04101C;
     }
     100% {
@@ -84,14 +85,14 @@
     animation-name: sky_change;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.03, 1, 0.71, 0.02);
+    /* animation-timing-function: cubic-bezier(0.03, 1, 0.71, 0.02); */
   }
 
   @keyframes sky_change {
     0% {
       background-color: #82B1FF;
     }
-    15% {
+    45% {
       background-color: #04101C;
     }
     65% {
