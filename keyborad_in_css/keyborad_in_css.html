@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  #test1:valid .background_style {
+    background-color: red;
+  }
+
+  .background_style {
+    height: 100px;
+    width: 100px;
+    background-color: #000;
+  }
+</style>
+
+<body>
+  <input type="text" id="test1" required pattern="[a,z]{1,15}">
+  <div class="background_style"></div>
+</body>
+
+</html>
